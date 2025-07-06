@@ -32,6 +32,38 @@ function initNavigation() {
     // Navigation click handlers
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+
+            const href = link.getAttribute('href');
+            
+            // Check if it's an internal link (starts with #) or external page
+            if (href.startsWith('#')) {
+                // Internal link - prevent default and smooth scroll
+                e.preventDefault();
+                
+                // Remove active class from all links
+                navLinks.forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+                
+                // Smooth scroll to section
+                const targetSection = document.querySelector(href);
+                
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            } else {
+                // External page link - allow normal navigation
+                // Remove active class from all links
+                navLinks.forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+              
             e.preventDefault();
             
             // Remove active class from all links
@@ -50,6 +82,7 @@ function initNavigation() {
                     top: offsetTop,
                     behavior: 'smooth'
                 });
+
             }
             
             // Close mobile menu if open

@@ -1,0 +1,54 @@
+2:I[104,["617","static/chunks/617-53f0314aa97a9b9a.js","42","static/chunks/42-279aafbcc95414d1.js","623","static/chunks/app/photography/page-dd52742abe887a43.js"],"default"]
+3:I[6393,["617","static/chunks/617-53f0314aa97a9b9a.js","42","static/chunks/42-279aafbcc95414d1.js","623","static/chunks/app/photography/page-dd52742abe887a43.js"],"default"]
+4:I[2669,["617","static/chunks/617-53f0314aa97a9b9a.js","42","static/chunks/42-279aafbcc95414d1.js","623","static/chunks/app/photography/page-dd52742abe887a43.js"],"default"]
+5:I[9966,["617","static/chunks/617-53f0314aa97a9b9a.js","42","static/chunks/42-279aafbcc95414d1.js","623","static/chunks/app/photography/page-dd52742abe887a43.js"],"default"]
+6:I[9701,["617","static/chunks/617-53f0314aa97a9b9a.js","42","static/chunks/42-279aafbcc95414d1.js","623","static/chunks/app/photography/page-dd52742abe887a43.js"],"default"]
+7:I[9275,[],""]
+8:I[1343,[],""]
+a:I[5064,["185","static/chunks/app/layout-9396165ea7e7d7c2.js"],"ThemeProvider"]
+9:T6ea,
+              // Cursor follower effect
+              document.addEventListener('DOMContentLoaded', function() {
+                const cursor = document.getElementById('cursor-follower');
+                if (!cursor) return;
+                
+                let mouseX = 0;
+                let mouseY = 0;
+                let cursorX = 0;
+                let cursorY = 0;
+                
+                document.addEventListener('mousemove', function(e) {
+                  mouseX = e.clientX;
+                  mouseY = e.clientY;
+                });
+                
+                function animateCursor() {
+                  const dx = mouseX - cursorX;
+                  const dy = mouseY - cursorY;
+                  
+                  cursorX += dx * 0.1;
+                  cursorY += dy * 0.1;
+                  
+                  cursor.style.transform = 'translate(' + cursorX + 'px, ' + cursorY + 'px)';
+                  requestAnimationFrame(animateCursor);
+                }
+                
+                animateCursor();
+                
+                // Add hover effect for interactive elements
+                const interactiveElements = document.querySelectorAll('a, button, .card-hover');
+                interactiveElements.forEach(el => {
+                  el.addEventListener('mouseenter', () => {
+                    cursor.style.transform += ' scale(2)';
+                    cursor.style.background = '#4a7c59';
+                  });
+                  
+                  el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = cursor.style.transform.replace(' scale(2)', '');
+                    cursor.style.background = '#2d5016';
+                  });
+                });
+              });
+            0:["9hjoHDmD9bqfDMZvWtytH",[[["",{"children":["photography",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",{"children":["photography",{"children":["__PAGE__",{},[["$L1",["$","main",null,{"className":"min-h-screen","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}]]}]],null],null]},["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","photography","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$9"}}]}],["$","body",null,{"className":"__className_e8ce0c","children":["$","$La",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3a76d016df9114a8.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$Lb"]]]]]
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Photography Gallery - Parth Kale"}],["$","meta","3",{"name":"description","content":"Explore my photography collection featuring landscapes, portraits, street photography, and more."}],["$","meta","4",{"name":"author","content":"Parth Kale"}],["$","meta","5",{"name":"keywords","content":"Full Stack Developer,Electron,TypeScript,Unity,Game Development,React,Next.js,Wroclaw,Poland"}],["$","meta","6",{"name":"creator","content":"Parth Kale"}],["$","meta","7",{"name":"publisher","content":"Parth Kale"}],["$","meta","8",{"name":"robots","content":"index, follow"}],["$","meta","9",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","10",{"rel":"canonical","href":"https://parth-kale.github.io/"}],["$","meta","11",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","12",{"property":"og:title","content":"Parth Kale - Full Stack Developer & Game Developer"}],["$","meta","13",{"property":"og:description","content":"Full Stack Developer specializing in Electron, TypeScript, and Unity game development. Based in Wroclaw, Poland."}],["$","meta","14",{"property":"og:url","content":"https://parth-kale.github.io/"}],["$","meta","15",{"property":"og:site_name","content":"Parth Kale Portfolio"}],["$","meta","16",{"property":"og:locale","content":"en_US"}],["$","meta","17",{"property":"og:image","content":"https://parth-kale.github.io/images/portfolio1.png"}],["$","meta","18",{"property":"og:image:width","content":"1200"}],["$","meta","19",{"property":"og:image:height","content":"630"}],["$","meta","20",{"property":"og:image:alt","content":"Parth Kale Portfolio"}],["$","meta","21",{"property":"og:type","content":"website"}],["$","meta","22",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","23",{"name":"twitter:title","content":"Parth Kale - Full Stack Developer & Game Developer"}],["$","meta","24",{"name":"twitter:description","content":"Full Stack Developer specializing in Electron, TypeScript, and Unity game development."}],["$","meta","25",{"name":"twitter:image","content":"https://parth-kale.github.io/images/portfolio1.png"}]]
+1:null
